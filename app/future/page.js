@@ -54,7 +54,7 @@ function page() {
             </div>
             <div className="mt-6 flex flex-col justify-center items-center">
         {error && <div className="text-lg">There was an error predicting your future. Please retry 😔</div>}
-        {/* {loading && <div><Loader /></div>} */}
+        {loading && <div><Loader /></div>}
         <div className="text-center sm:w-3/5">{response}</div>
             </div>
          </div>
