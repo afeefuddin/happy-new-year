@@ -1,0 +1,27 @@
+.art{
+    --radial-size: 1500px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: calc(var(--radial-size)*-0.5);
+    margin-left: calc(var(--radial-size)*-0.5);
+    width: var(--radial-size);
+    height: var(--radial-size);
+    pointer-events: none;
+    will-change: transform;
+    z-index: -1;
+}
+.art::before{
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(144, 172, 255, 0.2) 0%, rgba(144, 172, 255, 0) 70%, rgba(144, 172, 255, 0) 100%);
+}
+.text{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg,rgb(133, 177, 243),#38e39b);
+}
