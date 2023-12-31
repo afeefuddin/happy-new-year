@@ -44,7 +44,7 @@ const timeLeft = ()=>{
 },[])
     return (
         <div>
-            <div className="flex flex-row gap-4">
+            <div className="flex flex-row gap-4" style={{gap:'1rem'}}>
                 <div className=''> 
                    {!newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >{useTime.hours &&  useTime.hours<10  && <>0</>}{useTime.hours | 0}</div> }
                    {newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >00</div> }
