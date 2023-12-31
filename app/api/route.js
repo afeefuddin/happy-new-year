@@ -8,8 +8,10 @@ const genAI = new GoogleGenerativeAI(process.env.API_KEY);
 export async function GET(request) {
   // Perform your API call here
    try {
-    const url = new URL(request.url)
-    const name =  url.searchParams.get('name')
+    // console.log(request.nextUrl.searchParams.get('name'))
+    // console.log(params.get('name'))
+    // const url = new URL(request.url)
+    const name =  request.nextUrl.searchParams.get('name')
     console.log(name)
     // console.log(params)
     console.log('Here')
