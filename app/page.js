@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <div className='absolute bottom-3'>Made by <a href="https://github.com/afeefuddin">Afeef</a> in NEXT with 💙</div>
+      <div className='absolute bottom-3 z-50'>Made by <a href="https://github.com/afeefuddin">Afeef</a> in NEXT with 💙</div>
            {newyear &&  <Fireworks
         ref={ref}
         options={{ opacity: 0.5 }}
