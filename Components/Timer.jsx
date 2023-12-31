@@ -45,19 +45,19 @@ const timeLeft = ()=>{
     return (
         <div>
             <div className="flex flex-row gap-4">
-                <div>
-                   {!newyear && <div className="text-5xl">{useTime.hours &&  useTime.hours<10  && <>0</>}{useTime.hours | 0}</div> }
-                   {newyear && <div className="text-5xl">00</div> }
+                <div className=''> 
+                   {!newyear && <div className="text-6xl" >{useTime.hours &&  useTime.hours<10  && <>0</>}{useTime.hours | 0}</div> }
+                   {newyear && <div className="text-6xl">00</div> }
                     <span>Hours</span>
                 </div>
                 <div>
-                    {!newyear && <div className="text-5xl">{useTime.mins &&  useTime.mins<10  && <>0</>}{useTime.mins | 0}</div>}
-                    {newyear && <div className="text-5xl">00</div> }
+                    {!newyear && <div className="text-6xl">{useTime.mins &&  useTime.mins<10  && <>0</>}{useTime.mins | 0}</div>}
+                    {newyear && <div className="text-6xl">00</div> }
                     <span>Minutes</span>
                 </div>
                 <div>
-                    {!newyear && <div className="text-5xl" >{useTime.secs &&  useTime.secs<10  && <>0</>}{useTime.secs | 0}</div>}
-                    {newyear && <div className="text-5xl">00</div> }
+                    {!newyear && <div className="text-6xl" >{useTime.secs &&  useTime.secs<10  && <>0</>}{useTime.secs | 0}</div>}
+                    {newyear && <div className="text-6xl">00</div> }
                     <span>seconds</span>
                 </div>
             </div>
