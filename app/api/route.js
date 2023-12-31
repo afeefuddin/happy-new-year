@@ -1,3 +1,4 @@
+'use server'
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 import { headers } from 'next/headers';
@@ -5,13 +6,14 @@ import { headers } from 'next/headers';
 
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY);
-export async function GET(request) {
+export async function POST(request) {
   // Perform your API call here
    try {
     // console.log(request.nextUrl.searchParams.get('name'))
     // console.log(params.get('name'))
     // const url = new URL(request.url)
     const name =  request.nextUrl.searchParams.get('name')
+    console.log(request.query)
     console.log(name)
     // console.log(params)
     console.log('Here')

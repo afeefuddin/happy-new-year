@@ -22,7 +22,7 @@ function page() {
             const headers = {
                 name : name
             }
-            const response = await axios.get(`api/?name=${name}`);
+            const response = await axios.post(`api/?name=${name}`);
             console.log(response);
             setResposne(response.data.response);
             setLoading(false)
