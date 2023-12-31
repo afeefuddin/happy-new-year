@@ -44,7 +44,7 @@ function page() {
             <div className="text-3xl h-3/6 flex flex-col justify-center"><h1 className="text text-3xl text-center p-2 md:text-5xl font-medium">Predict your 2024 with AI</h1></div>
             <div className="flex flex-col gap-6 w-full items-center">
 
-        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} className="bg-gray-950 pt-2 pb-2 pl-4 pr-4 w-4/5 sm:w-1/2 text-lg outline-none" placeholder="Enter your name" />
+        <input type="text" value={name} onChange={(e)=>setName(e.target.value)} className="bg-gray-900 pt-2 pb-2 pl-4 pr-4 w-4/5 sm:w-1/2 text-lg outline-none text-blue-500" placeholder="Enter your name" />
         <button className="bg-white text-black pt-1 pb-1 pl-8 pr-8 rounded-full text-xl" onClick={()=>{
             handleclick()
         }}>Start</button>
