@@ -46,18 +46,18 @@ const timeLeft = ()=>{
         <div>
             <div className="flex flex-row gap-4">
                 <div className=''> 
-                   {!newyear && <div className="text-4xl" style={{fontSize : "3.25rem"}} >{useTime.hours &&  useTime.hours<10  && <>0</>}{useTime.hours | 0}</div> }
-                   {newyear && <div className="text-4xl" style={{fontSize : "3.25rem"}} >00</div> }
+                   {!newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >{useTime.hours &&  useTime.hours<10  && <>0</>}{useTime.hours | 0}</div> }
+                   {newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >00</div> }
                     <span>Hours</span>
                 </div>
                 <div>
-                    {!newyear && <div className="text-4xl" style={{fontSize : "3.25rem"}} >{useTime.mins &&  useTime.mins<10  && <>0</>}{useTime.mins | 0}</div>}
-                    {newyear && <div className="text-4xl" style={{fontSize : "3.25rem"}} >00</div> }
+                    {!newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >{useTime.mins &&  useTime.mins<10  && <>0</>}{useTime.mins | 0}</div>}
+                    {newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >00</div> }
                     <span>Minutes</span>
                 </div>
                 <div>
-                    {!newyear && <div className="text-4xl"style={{fontSize : "3.25rem"}}  >{useTime.secs &&  useTime.secs<10  && <>0</>}{useTime.secs | 0}</div>}
-                    {newyear && <div className="text-4xl" style={{fontSize : "3.25rem"}} >00</div> }
+                    {!newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}}  >{useTime.secs &&  useTime.secs<10  && <>0</>}{useTime.secs | 0}</div>}
+                    {newyear && <div className="text-4xl" style={{fontSize : "2.75rem"}} >00</div> }
                     <span>seconds</span>
                 </div>
             </div>
